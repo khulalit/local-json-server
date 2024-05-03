@@ -1,6 +1,13 @@
-const express = require("express");
-const app = express();
+const { promptUser } = require("./src/inputHandler/inputHandler");
+const { loadConfigFile } = require("./src/readFile/fileHandler");
+const { generateRoutes } = require("./src/routes/routeGenerator");
+const { startServer } = require("./src/server/server");
 
-app.listen(() => {
-  console.log("server is running on port ");
-}, 3000);
+let PORT = 8080;
+
+promptUser((port, filePath) => {
+  PORT = port;
+  const routes = loadConfigFile(filePath);
+  const app = startServer(PORT);
+  generateRoutes(app, routes);
+});
