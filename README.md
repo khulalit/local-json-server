@@ -34,10 +34,12 @@ Example `mock-api.json`:
       "message": "User created successfully"
     }
   }
-] ```
+]
 
 3. Start the server :
-```npm run start ```
+```
+npm run start 
+```
 
 # File Structure
 - index.js: Entry point of the application, responsible for loading mock API configurations and starting the server.
