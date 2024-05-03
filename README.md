@@ -9,7 +9,7 @@ This project is an example of a fake JSON server built in Node.js, designed for 
 2. Define Mock API Configuration: Define your mock API endpoints and their responses in the `mock-api.json` file. Each endpoint configuration should include the HTTP method (`GET`, `POST`, etc.), the route path, and the mock response data.
 
 Example `mock-api.json`:
-```json
+```
 [
   {
     "method": "GET",
