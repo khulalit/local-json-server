@@ -1,0 +1,25 @@
+{
+  "name": "local-json-server",
+  "version": "1.0.0",
+  "description": "Dummy local server for testing frontends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dummy",
+    "api",
+    "req",
+    "json",
+    "server"
+  ],
+  "author": "Lalit",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
